@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de contatos</h1>
+            <img src="./Imagens/contato.jpg" alt="balão com telefone">
+        </header>
+        <form id="form-contato">
+            <input type="text" id="nome-contato" required placeholder="Nome do contato" >
+            <input type="tel" id="numero-contato" required placeholder="Número do contato" maxlength="12" >
+            <button type="submit">Adicionar contato +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome do contato
+                    </th>
+                    <th>Número do contato</th>
+                    <th>Fixo ou celular?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Contato 1</td>
+                    <td>62 33158025</td>
+                    <td><img src="./Imagens/Tel. fixo.png" alt="telefone fixo" /></td>
+                </tr>
+                    <tr>
+                    <td>Contato 2</td>
+                    <td>62 988662255</td>
+                    <td><img src="./Imagens/Tel. Celular.png" alt="telefone celular" /></td>
+                    <tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
